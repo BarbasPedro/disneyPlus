@@ -9,11 +9,10 @@ function styles () {
 }
 
 function images () {
-  return gulp.src('./src/images/*')
+  return gulp.src('./src/images/**')
   .pipe(imagemin())
   .pipe(gulp.dest('./dist/images'));
 }
-
 
 exports.default = gulp.parallel(styles, images);
 exports.watch = function () {
