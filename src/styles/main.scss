@@ -151,6 +151,13 @@ body {
 
   @media (max-width: 768px) {
     display: block;
+
+    &__text-container{
+      h2 {
+        text-align: center;
+      }
+    }
+
   }
 
   img {

@@ -9,6 +9,11 @@
 
     @media (max-width: 768px) {
       display: block;
+      margin-top: 24px;
+
+      img {
+        width: 100%;
+      }
     }
 
     .button {
@@ -18,7 +23,7 @@
     &__item {
       max-width: 380px;
       width: 100%;
-      padding: 60px 44px 44px;
+      padding: 0 44px 44px;
 
       &:nth-child(2) {
         background-image: url(../images/fundo_combo_plus.png);
@@ -36,5 +41,4 @@
       }
     }
   }
-
 }

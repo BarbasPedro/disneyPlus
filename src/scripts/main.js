@@ -13,8 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       exibeElementosHeader();
     }
-    }
-  );
+  });
 
   // Seção de atrações, programação das abas
   for (let i = 0; i < buttons.length; i++){
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Seção FAQ< accordion
   for (let i = 0; i < questions.length; i++){
-    questions[i].addEventListener('click', abreOuFecha)
+    questions[i].addEventListener('click', abreOuFechaResposta)
   }
 })
 
@@ -45,10 +44,10 @@ function exibeElementosHeader () {
   header.classList.remove('header--is-hidden');
 }
 
-function abreOuFecha (elemento) {
+function abreOuFechaResposta (elemento) {
   const classe = 'faq__questions__item--is-open';
   const elementoPai = elemento.target.parentNode;
-  console.log(elementoPai)
+
   elementoPai.classList.toggle(classe)
 }
 

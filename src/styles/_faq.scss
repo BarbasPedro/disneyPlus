@@ -7,8 +7,6 @@
   }
 
   &__questions {
-    margin-top: 16px;
-
     &__item {
       background-color: #13151d;
       margin-bottom: 16px;
@@ -32,13 +30,21 @@
           font-size: 40px;
           line-height: .8;
         }
+
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
       }
 
       &__answer {
         height: 0;
         overflow: hidden;
-        transition: height 10s ease;
         padding: 0 24px;
+        transition: height, .5s ease;
+
+        p{
+          padding-top: 20px;
+        }
       }
 
       &--is-open {
@@ -49,7 +55,7 @@
         .faq__questions__item__answer {
           height: auto;
           padding-bottom: 24px;
-          transition: height 10s ease;
+          transition: height, .5s ease;
         }
       }
     }

@@ -13,8 +13,9 @@
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
     }
-    
+
     &__item{
       text-align: center;
 
@@ -25,6 +26,11 @@
       h4 {
         margin-top: 20px;
         margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+          margin-top: 10px;
+          margin-bottom: 12px;
+        }
       }
 
       li {
