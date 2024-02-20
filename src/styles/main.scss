@@ -33,10 +33,10 @@ body {
   button{
     a{
     text-decoration: none;
-    color: variaveis.$corTextoPrincipal;
+    color: variaveis.$corTextoSecundario;
 
       &:visited {
-        color: variaveis.$corTextoPrincipal;
+        color: variaveis.$corTextoSecundario;
       }
     }
   }
