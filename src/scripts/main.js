@@ -1,18 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('[data-tab-button]');
   const questions = document.querySelectorAll('[data-faq-question]')
+
   const heroSection = document.querySelector('.hero');
   const alturaHero = heroSection.clientHeight;
-  const hidden = document.querySelector('.header')
 
   window.addEventListener('scroll', function() {
     const posicaoAtual = window.scrollY;
 
     if (posicaoAtual < alturaHero) {
-      hidden.classList.add('header--is-hidden')
-      } else {
-        hidden.classList.remove('header--is-hidden')
-      }
+      ocultaElementosHeader();
+    } else {
+      exibeElementosHeader();
+    }
     }
   );
 
@@ -34,6 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
     questions[i].addEventListener('click', abreOuFecha)
   }
 })
+
+function ocultaElementosHeader () {
+    const header = document.querySelector('header');
+    header.classList.add('header--is-hidden');
+}
+
+function exibeElementosHeader () {
+  const header = document.querySelector('header');
+  header.classList.remove('header--is-hidden');
+}
 
 function abreOuFecha (elemento) {
   const classe = 'faq__questions__item--is-open';

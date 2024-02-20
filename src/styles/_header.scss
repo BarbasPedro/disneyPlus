@@ -9,7 +9,7 @@
   z-index: 1;
 
   &--is-hidden {
-    background-color: variaveis.$corFundo;
+    background-color: transparent;
     transition: background-color .5 ease;
 
     .header {

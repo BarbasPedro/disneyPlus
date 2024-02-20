@@ -8,17 +8,17 @@
 </head>
 <body>
 
-  <header class="header">
+  <header class="header header--is-hidden">
     <div class="header__container">
       <h1 class="hidden">
         <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
       </h1>
       <ul class="header__links">
         <li class="header__links__item">
-          <a href="#" class="button button--secondary">Assine agora</a>
+          <a href="https://www.disneyplus.com/pt-br/identity/sign-up/enter-email?skuInterval=monthly&toggle=shown" class="button button--secondary">Assine agora</a>
         </li>
         <li class="header__links__item">
-          <a href="#" class="button button--dark">Entrar</a>
+          <a href="https://www.disneyplus.com/identity/login/enter-email" class="button button--dark">Entrar</a>
         </li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
         As melhores histórias em um só lugar.
       </h3>
       <p>
-        <a class="link--text" href="#"> Assinar o Disney+</a>
+        <a class="link--text" href="https://disneytermsofuse.com/brazilian-portuguese/"> Assinar o Disney+</a>
         <br>
         <span class="text">R$27,90/mês ou R$279,90/ano à vista*</span>
       </p>
@@ -41,14 +41,14 @@
         <li class="hero__content__combos__combo">
           <img src="./src/images/logos/disney_star_plus.png" alt="Combo Disney+Star+">
           <button class="button">
-            Assine Agora
+            <a href="https://www.disneyplus.com/identity/sign-up?skuInterval=monthly&toggle=shown">Assine agora</a>
           </button>
           <span class="text">R$45,90/mês*</span>
         </li>
         <li class="hero__content__combos__combo">
           <img src="./src/images/logos/disney_star_plus_starzplay.png" alt="Combo Disney+Star+">
           <button class="button">
-            Assine Agora
+            <a href="https://www.disneyplus.com/identity/sign-up?type=bundle">Assine agora</a>
           </button>
           <span class="text">R$55,90/mês*</span>
         </li>
@@ -145,7 +145,9 @@
         <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
         <strong class="title--small">R$27,90/mês*</strong>
         <p class="text">No Disney+ você encontra as últimas estreias do cinema e originais e clássicos inesquecíveis</p>
-        <button class="button">Assine Agora</button>
+        <button class="button">
+          <a href="https://www.disneyplus.com/identity/sign-up?skuInterval=monthly&toggle=shown">Assine agora</a>
+        </button>
       </li>
       <li class="plans__list__item">
         <img src="./dist/images/logos/disney_star_plus_sm.png" alt="Disney+">
@@ -153,13 +155,17 @@
         <p class="text">Assine Disney+ e Star+ juntos.
           Economize e aproveite agora os dois serviços por um preço único.
         </p>
-        <button class="button">Assine Agora</button>
+        <button class="button">
+          <a href="https://www.disneyplus.com/identity/sign-up?skuInterval=monthly&toggle=shown">Assine agora</a>
+        </button>
       </li>
       <li class="plans__list__item">
         <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
         <strong class="title--small">R$55,90/mês*</strong>
         <p class="text">Disney+, Star+ e STARZPLAY em um plano especial. Assine agora os três juntos. </p>
-        <button class="button">Assine Agora</button>
+        <button class="button">
+          <a href="https://www.disneyplus.com/identity/sign-up?skuInterval=monthly&toggle=shown">Assine agora</a>
+        </button>
       </li>
     </ul>
     <p class="text--small">*O preço pode variar caso a assinatura seja feita atrvés de outras plataformas</p>
@@ -343,25 +349,25 @@
           </div>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Termos e Condições de Uso</a>
+          <a href="https://disneytermsofuse.com/brazilian-portuguese/" class="text--small">Termos e Condições de Uso</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Política de privacidade</a>
+          <a href="https://www.disneyplus.com/legal/pol%C3%ADtica-de-privacidade" class="text--small">Política de privacidade</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+          <a href="https://www.disneyplus.com/legal/prote%C3%A7%C3%A3o-de-dados-no-brasil" class="text--small">Proteção de Dados no Brasil</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Anúncios personalizados</a>
+          <a href="https://preferences-mgr.trustarc.com/?pid=disney01&aid=disneyplus01&type=disneyplus" class="text--small">Anúncios personalizados</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Dispositivos compatíveis</a>
+          <a href="https://help.disneyplus.com/article/disneyplus-devices-supported" class="text--small">Dispositivos compatíveis</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Ajuda</a>
+          <a href="https://help.disneyplus.com/" class="text--small">Ajuda</a>
         </li>
         <li class="footer__links__item">
-          <a href="#" class="text--small">Sobre o Disney+</a>
+          <a href="https://help.disneyplus.com/csp?id=csp_article_content&sys_kb_id=1123a3bcdb1815d40729eb2ed39619e3" class="text--small">Sobre o Disney+</a>
         </li>
       </ul>
       <p class="text--small">
@@ -373,7 +379,6 @@
     </div>
   </footer>
 
-  <script src="./dist/scripts/main.js"></script>
-
+  <script src="./src/scripts/main.js"></script>
 </body>
 </html>

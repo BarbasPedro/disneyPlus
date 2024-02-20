@@ -29,6 +29,9 @@
   &__tabs {
     display: flex;
     justify-content: center;
+    &::-webkit-scrollbar{
+      display: none;
+    }
 
     @media (max-width: 768px) {
       white-space: nowrap;

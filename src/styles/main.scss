@@ -29,6 +29,17 @@
 
 body {
   background-color: variaveis.$corFundo;
+
+  button{
+    a{
+    text-decoration: none;
+    color: variaveis.$corTextoPrincipal;
+
+      &:visited {
+        color: variaveis.$corTextoPrincipal;
+      }
+    }
+  }
 }
 
 @mixin text($fontSize: 16px) {
